@@ -1,4 +1,4 @@
-name: Django CD
+name: Django CD workflow
 
 on:
   push:
@@ -33,4 +33,4 @@ jobs:
       with:
         args: deploy --only hosting
       env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} 
